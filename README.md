@@ -17,3 +17,8 @@ tool as your default tool for opening images.
 3. Swap raylib's image loading to some other C solution that is a better fit, but keep raylib as the programs graphics thing.
 4. More advanced editing tools
 5. Still keep raylib around for windows and basic rendering, but at some point look into replacing Raygui with a self-written solution or some other skinnable imgui library.
+
+## How to run?
+1. Download the source!
+2. Download the nightly release of Zig and follow instructions there to get zig running.
+3. Do: zig build run

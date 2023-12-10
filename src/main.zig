@@ -1,11 +1,12 @@
 const std = @import("std");
 const r = @import("ray.zig").raylib;
 
-pub fn main() !void {}
-
-test "simple test" {
-    var list = std.ArrayList(i32).init(std.testing.allocator);
-    defer list.deinit(); // try commenting this out and see if zig detects the memory leak!
-    try list.append(42);
-    try std.testing.expectEqual(@as(i32, 42), list.pop());
+pub fn main() !void {
+    r.InitWindow(1920, 1080, "Zie v0.1");
+    r.SetTargetFPS(60);
+    while (!r.WindowShouldClose()) {
+        r.BeginDrawing();
+        r.EndDrawing();
+    }
+    r.CloseWindow();
 }

@@ -1,0 +1,15 @@
+.{
+    .name = "ngn",
+    .version = "0.0.1",
+    .paths = .{""},
+    .dependencies = .{
+        .raylib = .{
+            .url = "https://github.com/Katajisto/raylib/archive/32a39068611b532bea66a9a532e7249ba25cddef.tar.gz",
+            .hash = "12201f9bd9341fe368b587a54d0798329c9b3c6455cf0bf0c3cfd8a4ce56f3ae3c45",
+        },
+        .raygui = .{
+            .url = "https://github.com/raysan5/raygui/archive/499e8bf7b1d9b0a92af8f685e646bc61f13c6dff.tar.gz",
+            .hash = "122005a45aa0cf025fd0e72f3f3ec9b8c738cc86c52cb32d72d334035acdcee1c726",            
+        }
+    },
+}
